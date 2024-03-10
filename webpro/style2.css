@@ -1,0 +1,154 @@
+
+* {
+  box-sizing: border-box;
+}
+
+.info {
+  background-color: #242333;
+  display: flex;
+  color: white;
+  justify-content: center;
+  gap: 10px;
+  height: auto;
+  width: auto;
+}
+.seat {
+  background-color: #444451;
+  height: 1rem;
+  width: 1.25rem;
+  margin: 3px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.rowcss {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  height: 24px;
+}
+.movie-container {
+  margin: 0 0 1rem 0;
+}
+.movie-container select {
+  background-color: white;
+  border: 0;
+  border-radius: 5px;
+  font-size: 14px;
+  margin-left: 10px;
+  padding: 5px 15px 5px 15px;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+.seat.selected {
+  background-color: #6feaf6;
+}
+
+.seat.occupied {
+  background-color: rgb(220 38 38);
+}
+
+.noseat {
+  height: 1rem;
+  width: 1.25rem;
+  margin: 3px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.seat:not(.occupied):hover {
+  cursor: pointer;
+  transform: scale(1.2);
+}
+.showcase .seat:not(.occupied):hover {
+  cursor: default;
+  transform: scale(1);
+}
+.showcase {
+  background-color: rgba(0, 0, 0, 0.1);
+  padding: 5px 10px;
+  border-radius: 5px;
+  color: #777;
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+}
+.showcase li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 10px;
+}
+.showcase li small {
+  margin-left: 10px;
+}
+.screen {
+  background-color: #191D88;
+  height: 85px;
+  width: 100%;
+  margin: 15px 0;
+  transform: rotateX(-45deg);
+  box-shadow: 0 3px 10px black;
+}
+.containercss {
+  perspective: 900px;
+  margin-bottom: 30px;
+  display: flex;
+}
+.container2 {
+  perspective: 1000px;
+}
+
+p.text {
+  margin: 5px 0;
+}
+
+p.text span {
+  color: #6feaf6;
+}
+.row2 {
+  display: flex;
+  flex-direction: column;
+}
+.center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.btn {
+  margin-top: 15px;
+}
+.row3 {
+  display: flex;
+  gap: 5px;
+  height: 24px;
+  align-items: center;
+}
+input {
+  margin: 0px;
+}
+p {
+  margin: 0px;
+}
+.screen2 {
+  height: 85px;
+  width: 100%;
+  margin: 15px 0;
+  transform: rotateX(-45deg);
+}
+.row_name {
+  width: 30px;
+}
+.screen3 {
+  height: 61px;
+  width: 100%;
+  margin: 15px 0;
+  transform: rotateX(-45deg);
+}
+.right {
+  margin-left: 10px;
+}
+.left {
+  margin-right: 10px;
+}
